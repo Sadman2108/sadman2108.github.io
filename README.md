@@ -68,7 +68,7 @@ h1 {
 
 <div class="container">
 
-<img src="https://via.placeholder.com/120" class="profile">
+<img src="myphoto.jpg" class="profile">
 
 <h1>Sadman</h1>
 <div class="subtitle">WEB & APP DEVELOPER</div>
