@@ -1,4 +1,3 @@
-https://your-username.github.io/my-website<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
