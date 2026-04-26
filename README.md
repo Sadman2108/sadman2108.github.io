@@ -68,51 +68,51 @@ h1 {
 
 <div class="container">
 
-<img src="myphoto.jpg" class="profile">
+<img src="https://via.placeholder.com/120" class="profile">
 
 <h1>Sadman</h1>
 <div class="subtitle">WEB & APP DEVELOPER</div>
 
 <p class="desc">
-Hey there! I am sadman, a skilled app and web devoloper.
+Hey there! I am sadman, a skilled app and web devoloper.CSE
 </p>
 
 <h2>My Skill Percentage</h2>
 
 <div class="skill">
 JAVA:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:20%; background:red;"></div></div>
+<div class="percent">20%</div>
 </div>
 
 <div class="skill">
 JAVASCRIPT:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:30%; background:lime;"></div></div>
+<div class="percent">30%</div>
 </div>
 
 <div class="skill">
 PYTHON:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:35%; background:pink;"></div></div>
+<div class="percent">35%</div>
 </div>
 
 <div class="skill">
 PHP:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:40%; background:blue;"></div></div>
+<div class="percent">40%</div>
 </div>
 
 <div class="skill">
 CSS:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:10%; background:yellow;"></div></div>
+<div class="percent">10%</div>
 </div>
 
 <div class="skill">
 HTML:
-<div class="bar"><div class="fill"></div></div>
-<div class="percent">0%</div>
+<div class="bar"><div class="fill"style="width:50%; background:green;"></div></div>
+<div class="percent">50%</div>
 </div>
 
 </div>
