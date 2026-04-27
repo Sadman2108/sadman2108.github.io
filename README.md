@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Portfolio</title>
+<title>Sadman Portfolio</title>
 
 <style>
 body {
@@ -16,28 +17,30 @@ body {
   padding: 20px;
 }
 
-.profile {
-  width: 120px;
-  height: 120px;
+.profile-emoji {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 4px solid purple;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  margin: 20px auto;
+  background: #111;
+  border: 3px solid #8a2be2;
+  box-shadow: 0 0 15px #8a2be2;
+  animation: glow s infinite alternate, float 3s ease-in-out infinite;
 }
 
-h1 {
-  margin: 10px 0 5px;
+@keyframes glow {
+  from { box-shadow: 0 0 10px #8a2be2; }
+  to { box-shadow: 0 0 25px #ff00ff; }
 }
 
-.subtitle {
-  color: #ccc;
-  border-bottom: 2px solid orange;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.desc {
-  margin: 20px;
-  color: #ddd;
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 .skill {
@@ -46,15 +49,15 @@ h1 {
 }
 
 .bar {
-  background: #ddd;
+  background: #444;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .fill {
   height: 15px;
-  width: 0%;
-  background: green;
+  width: 0;
+  transition: width 2s ease;
 }
 
 .percent {
@@ -68,54 +71,41 @@ h1 {
 
 <div class="container">
 
-<img src="https://via.placeholder.com/120" class="profile">
+<div class="profile-emoji">☠️</div>
 
 <h1>Sadman</h1>
-<div class="subtitle">WEB & APP DEVELOPER</div>
+<div>WEB & APP DEVELOPER</div>
 
-<p class="desc">
-Hey there! I am sadman, a skilled app and web devoloper.CSE
+<p>
+Hey there! I am Sadman, a skilled app and web developer.
 </p>
 
-<h2>My Skill Percentage</h2>
-
-<div class="skill">
-JAVA:
-<div class="bar"><div class="fill"style="width:20%; background:red;"></div></div>
+<div class="skill">JAVA
+<div class="bar"><div class="fill" data-width="20%" style="background:red;"></div></div>
 <div class="percent">20%</div>
 </div>
 
-<div class="skill">
-JAVASCRIPT:
-<div class="bar"><div class="fill"style="width:30%; background:lime;"></div></div>
+<div class="skill">JAVASCRIPT
+<div class="bar"><div class="fill" data-width="30%" style="background:lime;"></div></div>
 <div class="percent">30%</div>
 </div>
 
-<div class="skill">
-PYTHON:
-<div class="bar"><div class="fill"style="width:35%; background:pink;"></div></div>
+<div class="skill">PYTHON
+<div class="bar"><div class="fill" data-width="35%" style="background:pink;"></div></div>
 <div class="percent">35%</div>
 </div>
 
-<div class="skill">
-PHP:
-<div class="bar"><div class="fill"style="width:40%; background:blue;"></div></div>
-<div class="percent">40%</div>
 </div>
 
-<div class="skill">
-CSS:
-<div class="bar"><div class="fill"style="width:10%; background:yellow;"></div></div>
-<div class="percent">10%</div>
-</div>
+<script>
+const fills = document.querySelectorAll(".fill");
 
-<div class="skill">
-HTML:
-<div class="bar"><div class="fill"style="width:50%; background:green;"></div></div>
-<div class="percent">50%</div>
-</div>
-
-</div>
+fills.forEach(fill => {
+  setTimeout(() => {
+    fill.style.width = fill.getAttribute("data-width");
+  }, 500);
+});
+</script>
 
 </body>
 </html>
